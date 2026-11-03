@@ -2,6 +2,16 @@
   publish = "site"
   command = "node scripts/build.mjs"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
+
+# The site's Ask feature calls /api/ask; send it to the server function.
+[[redirects]]
+  from = "/api/ask"
+  to = "/.netlify/functions/ask"
+  status = 200
+  force = true
