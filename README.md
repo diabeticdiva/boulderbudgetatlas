@@ -61,3 +61,4 @@ Every time you change a file on GitHub, Netlify rebuilds the site within a minut
 - **Ask says the assistant isn't connected:** the API key is missing. Repeat Step 3, parts 4 and 5.
 - **Ask says it's getting a lot of questions:** either one visitor hit the limit (20 questions per 10 minutes) or your Claude account reached its spend limit. Check Billing at platform.claude.com.
 - **To change the model:** add an environment variable `ATLAS_MODEL` (for example `claude-haiku-5-5` for a cheaper, faster assistant) and redeploy.
+
